@@ -1,0 +1,17 @@
+<suite name="Run" parallel="tests" thread-count="2">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="test.VerifyAddNewProduct"></class>
+            <class name="test.VerifyPlan"></class>
+
+        </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="test.VerifyAddNewProduct"></class>
+            <class name="test.VerifyPlan"></class>
+        </classes>
+    </test>
+</suite>
